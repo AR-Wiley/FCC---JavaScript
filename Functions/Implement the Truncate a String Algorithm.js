@@ -1,8 +1,6 @@
-const truncateString = (str, num) => {
-  let len = str.length
-  if (len > num){
-    str = str.slice(0, num)
-    return str + "..."
-  }
-  return str 
+
+const confirmEnding = (str, str2) => {
+  return str.slice(str.length - str2.length) === str2 ? true : false
 }
+
+
